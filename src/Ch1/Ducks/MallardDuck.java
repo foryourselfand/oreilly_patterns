@@ -1,4 +1,4 @@
-package Ch1;
+package Ch1.Ducks;
 
 import Ch1.Fly.FlyWithWings;
 import Ch1.Quack.Quack;
