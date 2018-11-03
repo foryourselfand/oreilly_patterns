@@ -1,4 +1,4 @@
-package Ch2;
+package Ch2.Dispays;
 
 import Ch2.Interfaces.DisplayElement;
 import Ch2.Interfaces.Observer;
