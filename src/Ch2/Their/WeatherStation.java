@@ -1,14 +1,18 @@
 package Ch2.Their;
 
 import Ch2.Their.Displays.CurrentConditionsDisplay;
+import Ch2.Their.Displays.ForecastDisplay;
+import Ch2.Their.Displays.HeatIndexDisplay;
+import Ch2.Their.Displays.StatisticsDisplay;
 
 public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
 
         CurrentConditionsDisplay currentConditions = new CurrentConditionsDisplay(weatherData);
-//        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
-//        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
+        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+        HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
 
         weatherData.setMeasurements(80, 65, 30.4f);
         weatherData.setMeasurements(82, 70, 29.2f);
