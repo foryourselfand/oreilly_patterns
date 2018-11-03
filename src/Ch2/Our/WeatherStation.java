@@ -1,9 +1,9 @@
-package Ch2;
+package Ch2.Our;
 
-import Ch2.Dispays.CurrentConditionsDisplay;
-import Ch2.Dispays.ForecastDisplay;
-import Ch2.Dispays.HeatIndexDisplay;
-import Ch2.Dispays.StatisticsDisplay;
+import Ch2.Our.Displays.CurrentConditionsDisplay;
+import Ch2.Our.Displays.ForecastDisplay;
+import Ch2.Our.Displays.HeatIndexDisplay;
+import Ch2.Our.Displays.StatisticsDisplay;
 
 public class WeatherStation {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
-package Ch2;
+package Ch2.Our;
 
-import Ch2.Interfaces.Observer;
-import Ch2.Interfaces.Subject;
+import Ch2.Our.Interfaces.Observer;
+import Ch2.Our.Interfaces.Subject;
 
 import java.util.ArrayList;
 

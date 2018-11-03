@@ -1,4 +1,4 @@
-package Ch2.Interfaces;
+package Ch2.Our.Interfaces;
 
 public interface Subject {
     public void registerObserver(Observer o);

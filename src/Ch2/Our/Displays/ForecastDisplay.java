@@ -1,8 +1,8 @@
-package Ch2.Dispays;
+package Ch2.Our.Displays;
 
-import Ch2.Interfaces.DisplayElement;
-import Ch2.Interfaces.Observer;
-import Ch2.Interfaces.Subject;
+import Ch2.Our.Interfaces.DisplayElement;
+import Ch2.Our.Interfaces.Observer;
+import Ch2.Our.Interfaces.Subject;
 
 public class ForecastDisplay implements Observer, DisplayElement {
     private float currentPressure = 29.92f;
