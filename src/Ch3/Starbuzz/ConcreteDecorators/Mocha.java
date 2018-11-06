@@ -4,8 +4,6 @@ import Ch3.Starbuzz.Component.Beverage;
 import Ch3.Starbuzz.Decorator.CondimentDecorator;
 
 public class Mocha extends CondimentDecorator {
-    Beverage beverage;
-
     public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }

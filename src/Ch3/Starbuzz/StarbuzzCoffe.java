@@ -4,6 +4,7 @@ import Ch3.Starbuzz.Component.Beverage;
 import Ch3.Starbuzz.ConcreteComponents.DarkRoast;
 import Ch3.Starbuzz.ConcreteComponents.Espresso;
 import Ch3.Starbuzz.ConcreteComponents.HouseBlend;
+import Ch3.Starbuzz.ConcreteDecorators.Milk;
 import Ch3.Starbuzz.ConcreteDecorators.Mocha;
 import Ch3.Starbuzz.ConcreteDecorators.Soy;
 import Ch3.Starbuzz.ConcreteDecorators.Whip;
@@ -27,5 +28,13 @@ public class StarbuzzCoffe {
         beverage3 = new Whip(beverage3);
         System.out.println(beverage3.getDescription() +
                 " $" + beverage3.cost());
+
+        Beverage beverage4 = new HouseBlend();
+        beverage4.setSize(Beverage.Size.GRANDE);
+        beverage4 = new Milk(beverage4);
+        beverage4 = new Milk(beverage4);
+        beverage4 = new Soy(beverage4);
+        System.out.println(beverage4.getDescription() +
+                " $" + beverage4.cost());
     }
 }
