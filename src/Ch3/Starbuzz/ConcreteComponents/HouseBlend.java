@@ -1,4 +1,6 @@
-package Ch3.Starbuzz;
+package Ch3.Starbuzz.ConcreteComponents;
+
+import Ch3.Starbuzz.Component.Beverage;
 
 public class HouseBlend extends Beverage {
     public HouseBlend() {

@@ -1,7 +1,7 @@
-package Ch3.Starbuzz;
+package Ch3.Starbuzz.Component;
 
 public abstract class Beverage {
-    String description = "Unknown Beverage";
+    protected String description = "Unknown Beverage";
 
     public String getDescription() {
         return description;

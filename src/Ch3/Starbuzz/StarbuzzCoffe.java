@@ -1,5 +1,13 @@
 package Ch3.Starbuzz;
 
+import Ch3.Starbuzz.Component.Beverage;
+import Ch3.Starbuzz.ConcreteComponents.DarkRoast;
+import Ch3.Starbuzz.ConcreteComponents.Espresso;
+import Ch3.Starbuzz.ConcreteComponents.HouseBlend;
+import Ch3.Starbuzz.ConcreteDecorators.Mocha;
+import Ch3.Starbuzz.ConcreteDecorators.Soy;
+import Ch3.Starbuzz.ConcreteDecorators.Whip;
+
 public class StarbuzzCoffe {
     public static void main(String[] args) {
         Beverage beverage1 = new Espresso();

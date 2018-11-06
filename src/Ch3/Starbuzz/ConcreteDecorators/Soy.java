@@ -1,4 +1,7 @@
-package Ch3.Starbuzz;
+package Ch3.Starbuzz.ConcreteDecorators;
+
+import Ch3.Starbuzz.Component.Beverage;
+import Ch3.Starbuzz.Decorator.CondimentDecorator;
 
 public class Soy extends CondimentDecorator {
     Beverage beverage;

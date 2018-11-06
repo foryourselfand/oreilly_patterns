@@ -1,4 +1,6 @@
-package Ch3.Starbuzz;
+package Ch3.Starbuzz.ConcreteComponents;
+
+import Ch3.Starbuzz.Component.Beverage;
 
 public class Espresso extends Beverage {
     public Espresso() {
