@@ -1,2 +1,3 @@
 Ch1 - Strategy (Стратегия)
 Ch2 - Observer (Наблюдатель)
+Ch3 - Decorator (Декоратор)
