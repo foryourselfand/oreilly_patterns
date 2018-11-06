@@ -2,7 +2,7 @@ package Ch3.Starbuzz;
 
 public class Espresso extends Beverage {
     public Espresso() {
-        description = "";
+        description = "Espresso";
     }
 
     @Override
