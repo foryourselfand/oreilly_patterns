@@ -12,4 +12,9 @@ public class CeilingFanOnCommand implements Command {
     public void execute() {
         ceilingFan.high();
     }
+
+    @Override
+    public void undo() {
+        ceilingFan.off();
+    }
 }
