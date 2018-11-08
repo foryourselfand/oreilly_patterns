@@ -2,17 +2,17 @@ package Ch6_Command.Remote.Commands;
 
 import Ch6_Command.Remote.Components.CeilingFan;
 
-public class CeilingFanOffCommand implements Command {
+public class CeilingFanMediumCommand implements Command {
     CeilingFan ceilingFan;
     CeilingFan.SpeedType prevSpeedType;
 
-    public CeilingFanOffCommand(CeilingFan ceilingFan) {
+    public CeilingFanMediumCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
     public void execute() {
         prevSpeedType = ceilingFan.getSpeedType();
-        ceilingFan.off();
+        ceilingFan.medium();
     }
 
     @Override

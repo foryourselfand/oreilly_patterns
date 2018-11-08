@@ -1,42 +1,48 @@
 package Ch6_Command.Remote.Components;
 
-public class CeilingFan {
-    public static final int HIGH = 2;
-    public static final int MEDIUM = 1;
-    public static final int LOW = 0;
-    String location = "";
-    int level;
+import static Ch6_Command.Remote.Components.CeilingFan.SpeedType.*;
 
+public class CeilingFan {
+    String location = "";
+    SpeedType speedType;
     public CeilingFan(String location) {
         this.location = location;
+        speedType = OFF;
     }
 
     public void high() {
         // turns the ceiling fan on to high
-        level = HIGH;
+        speedType = HIGH;
         System.out.println(location + " ceiling fan is on high");
 
     }
 
     public void medium() {
         // turns the ceiling fan on to medium
-        level = MEDIUM;
+        speedType = MEDIUM;
         System.out.println(location + " ceiling fan is on medium");
     }
 
     public void low() {
         // turns the ceiling fan on to low
-        level = LOW;
+        speedType = LOW;
         System.out.println(location + " ceiling fan is on low");
     }
 
     public void off() {
         // turns the ceiling fan off
-        level = 0;
+        speedType = OFF;
         System.out.println(location + " ceiling fan is off");
     }
 
-    public int getSpeed() {
-        return level;
+    public SpeedType getSpeedType() {
+        return speedType;
+    }
+
+    public enum SpeedType {
+        OFF,
+        LOW,
+        MEDIUM,
+        HIGH
     }
 }
