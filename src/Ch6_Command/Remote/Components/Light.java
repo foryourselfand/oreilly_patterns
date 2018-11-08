@@ -1,4 +1,4 @@
-package Ch6_Command.Remote;
+package Ch6_Command.Remote.Components;
 
 public class Light {
     String location = "";

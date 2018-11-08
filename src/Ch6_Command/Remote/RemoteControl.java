@@ -1,5 +1,8 @@
 package Ch6_Command.Remote;
 
+import Ch6_Command.Remote.Commands.Command;
+import Ch6_Command.Remote.Commands.NoCommand;
+
 public class RemoteControl {
     Command[] onCommands;
     Command[] offCommands;
@@ -32,8 +35,8 @@ public class RemoteControl {
         StringBuffer stringBuff = new StringBuffer();
         stringBuff.append("\n------ Remote Control -------\n");
         for (int i = 0; i < onCommands.length; i++) {
-            stringBuff.append("[slot " + i + "] " + onCommands[i].getClass().getName()
-                    + "    " + offCommands[i].getClass().getName() + "\n");
+            stringBuff.append("[slot " + i + "] " + onCommands[i].getClass().getSimpleName()
+                    + "\t" + offCommands[i].getClass().getSimpleName() + "\n");
         }
         return stringBuff.toString();
     }

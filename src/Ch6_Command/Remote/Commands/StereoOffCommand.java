@@ -1,4 +1,6 @@
-package Ch6_Command.Remote;
+package Ch6_Command.Remote.Commands;
+
+import Ch6_Command.Remote.Components.Stereo;
 
 public class StereoOffCommand implements Command {
     Stereo stereo;

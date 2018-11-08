@@ -1,4 +1,6 @@
-package Ch6_Command.Remote;
+package Ch6_Command.Remote.Commands;
+
+import Ch6_Command.Remote.Components.Light;
 
 public class LightOnCommand implements Command {
     Light light;
