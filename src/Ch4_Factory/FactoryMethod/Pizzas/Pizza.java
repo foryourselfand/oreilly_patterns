@@ -3,10 +3,10 @@ package Ch4_Factory.FactoryMethod.Pizzas;
 import java.util.ArrayList;
 
 public abstract class Pizza {
-    public String name;
-    public String dough;
-    public String sauce;
-    public ArrayList<String> toppings = new ArrayList<String>();
+    protected String name;
+    protected String dough;
+    protected String sauce;
+    protected ArrayList<String> toppings = new ArrayList<String>();
 
     public void prepare() {
         System.out.println("Prepare " + name);

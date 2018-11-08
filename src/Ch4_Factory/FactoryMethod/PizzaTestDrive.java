@@ -1,8 +1,9 @@
 package Ch4_Factory.FactoryMethod;
 
-import Ch4_Factory.FactoryMethod.Pizzas.ChicagoPizzaStore;
-import Ch4_Factory.FactoryMethod.Pizzas.NYPizzaStore;
+import Ch4_Factory.FactoryMethod.Stores.ChicagoPizzaStore;
+import Ch4_Factory.FactoryMethod.Stores.NYPizzaStore;
 import Ch4_Factory.FactoryMethod.Pizzas.Pizza;
+import Ch4_Factory.FactoryMethod.Stores.PizzaStore;
 
 public class PizzaTestDrive {
 
@@ -10,28 +11,28 @@ public class PizzaTestDrive {
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
 
-        Pizza pizza = nyStore.orderPizza("cheese");
+        Pizza pizza = nyStore.orderPizza(PizzaType.CHEESE);
         System.out.println("Ethan ordered a " + pizza.getName() + "\n");
 
-        pizza = chicagoStore.orderPizza("cheese");
+        pizza = chicagoStore.orderPizza(PizzaType.CHEESE);
         System.out.println("Joel ordered a " + pizza.getName() + "\n");
 
-//        pizza = nyStore.orderPizza("clam");
+//        pizza = nyStore.orderPizza(PizzaType.CLAM);
 //        System.out.println("Ethan ordered a " + pizza.getName() + "\n");
 //
-//        pizza = chicagoStore.orderPizza("clam");
+//        pizza = chicagoStore.orderPizza(PizzaType.CLAM);
 //        System.out.println("Joel ordered a " + pizza.getName() + "\n");
 //
-//        pizza = nyStore.orderPizza("pepperoni");
+//        pizza = nyStore.orderPizza(PizzaType.PEPPERONI);
 //        System.out.println("Ethan ordered a " + pizza.getName() + "\n");
 //
-//        pizza = chicagoStore.orderPizza("pepperoni");
+//        pizza = chicagoStore.orderPizza(PizzaType.PEPPERONI);
 //        System.out.println("Joel ordered a " + pizza.getName() + "\n");
 //
-//        pizza = nyStore.orderPizza("veggie");
+//        pizza = nyStore.orderPizza(PizzaType.VEGGIE);
 //        System.out.println("Ethan ordered a " + pizza.getName() + "\n");
 //
-//        pizza = chicagoStore.orderPizza("veggie");
+//        pizza = chicagoStore.orderPizza(PizzaType.VEGGIE);
 //        System.out.println("Joel ordered a " + pizza.getName() + "\n");
     }
 }

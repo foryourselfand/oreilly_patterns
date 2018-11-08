@@ -1,13 +1,14 @@
-package Ch4_Factory.FactoryMethod;
+package Ch4_Factory.FactoryMethod.Stores;
 
 import Ch4_Factory.FactoryMethod.Pizzas.Pizza;
+import Ch4_Factory.FactoryMethod.PizzaType;
 
 public abstract class PizzaStore {
 
-    protected abstract Pizza createPizza(String item);
+    protected abstract Pizza createPizza(PizzaType pizzaType);
 
-    public Pizza orderPizza(String type) {
-        Pizza pizza = createPizza(type);
+    public Pizza orderPizza(PizzaType pizzaType) {
+        Pizza pizza = createPizza(pizzaType);
 
         System.out.println("--- Making a " + pizza.getName() + " ---");
         pizza.prepare();
