@@ -1,36 +1,40 @@
 package Ch4_Factory.AbstractFactory.Stores;
 
 import Ch4_Factory.AbstractFactory.Factories.*;
+import Ch4_Factory.AbstractFactory.PizzaType;
 import Ch4_Factory.AbstractFactory.Pizzas.*;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
-    protected Pizza createPizza(String item) {
+    protected Pizza createPizza(PizzaType pizzaType) {
         Pizza pizza = null;
         PizzaIngredientFactory ingredientFactory =
                 new ChicagoPizzaIngredientFactory();
 
-        if (item.equals("cheese")) {
+        switch (pizzaType) {
+            case CHEESE:
 
-            pizza = new CheesePizza(ingredientFactory);
-            pizza.setName("Chicago Style Cheese Pizza");
+                pizza = new CheesePizza(ingredientFactory);
 
-        } else if (item.equals("veggie")) {
+                break;
+            case VEGGIE:
 
-            pizza = new VeggiePizza(ingredientFactory);
-            pizza.setName("Chicago Style Veggie Pizza");
+                pizza = new VeggiePizza(ingredientFactory);
 
-        } else if (item.equals("clam")) {
+                break;
+            case CLAM:
 
-            pizza = new ClamPizza(ingredientFactory);
-            pizza.setName("Chicago Style Clam Pizza");
+                pizza = new ClamPizza(ingredientFactory);
 
-        } else if (item.equals("pepperoni")) {
+                break;
+            case PEPPERONI:
 
-            pizza = new PepperoniPizza(ingredientFactory);
-            pizza.setName("Chicago Style Pepperoni Pizza");
+                pizza = new PepperoniPizza(ingredientFactory);
 
+                break;
         }
+        pizza.setName("Chicago Style " + pizzaType.name() + " Pizza");
+
         return pizza;
     }
 }

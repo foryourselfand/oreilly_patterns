@@ -10,28 +10,28 @@ public class PizzaTestDrive {
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
 
-        Pizza pizza = nyStore.orderPizza("cheese");
+        Pizza pizza = nyStore.orderPizza(PizzaType.CHEESE);
         System.out.println("Ethan ordered a " + pizza + "\n");
 
-        pizza = chicagoStore.orderPizza("cheese");
+        pizza = chicagoStore.orderPizza(PizzaType.CHEESE);
         System.out.println("Joel ordered a " + pizza + "\n");
 
-        pizza = nyStore.orderPizza("clam");
-        System.out.println("Ethan ordered a " + pizza + "\n");
-
-        pizza = chicagoStore.orderPizza("clam");
-        System.out.println("Joel ordered a " + pizza + "\n");
-
-        pizza = nyStore.orderPizza("pepperoni");
-        System.out.println("Ethan ordered a " + pizza + "\n");
-
-        pizza = chicagoStore.orderPizza("pepperoni");
-        System.out.println("Joel ordered a " + pizza + "\n");
-
-        pizza = nyStore.orderPizza("veggie");
-        System.out.println("Ethan ordered a " + pizza + "\n");
-
-        pizza = chicagoStore.orderPizza("veggie");
-        System.out.println("Joel ordered a " + pizza + "\n");
+//        pizza = nyStore.orderPizza(PizzaType.CLAM);
+//        System.out.println("Ethan ordered a " + pizza + "\n");
+//
+//        pizza = chicagoStore.orderPizza(PizzaType.CLAM);
+//        System.out.println("Joel ordered a " + pizza + "\n");
+//
+//        pizza = nyStore.orderPizza(PizzaType.PEPPERONI);
+//        System.out.println("Ethan ordered a " + pizza + "\n");
+//
+//        pizza = chicagoStore.orderPizza(PizzaType.PEPPERONI);
+//        System.out.println("Joel ordered a " + pizza + "\n");
+//
+//        pizza = nyStore.orderPizza(PizzaType.VEGGIE);
+//        System.out.println("Ethan ordered a " + pizza + "\n");
+//
+//        pizza = chicagoStore.orderPizza(PizzaType.VEGGIE);
+//        System.out.println("Joel ordered a " + pizza + "\n");
     }
 }
