@@ -1,7 +1,7 @@
-package Ch9_Iterator.DinerMerged;
+package Ch9_Iterator.DinerMerger;
 
-import Ch9_Iterator.DinerMerged.Iterators.Iterator;
-import Ch9_Iterator.DinerMerged.Menus.Menu;
+import Ch9_Iterator.DinerMerger.Iterators.Iterator;
+import Ch9_Iterator.DinerMerger.Menus.Menu;
 
 public class Waitress {
     Menu pancakeHouseMenu;
@@ -43,10 +43,7 @@ public class Waitress {
             return true;
         }
         Iterator dinnerIterator = dinerMenu.createIterator();
-        if (isVegetarian(name, dinnerIterator)) {
-            return true;
-        }
-        return false;
+        return isVegetarian(name, dinnerIterator);
     }
 
 

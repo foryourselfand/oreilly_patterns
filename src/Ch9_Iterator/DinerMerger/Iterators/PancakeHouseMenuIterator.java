@@ -1,6 +1,6 @@
-package Ch9_Iterator.DinerMerged.Iterators;
+package Ch9_Iterator.DinerMerger.Iterators;
 
-import Ch9_Iterator.DinerMerged.MenuItem;
+import Ch9_Iterator.DinerMerger.MenuItem;
 
 import java.util.ArrayList;
 
@@ -19,10 +19,6 @@ public class PancakeHouseMenuIterator implements Iterator {
     }
 
     public boolean hasNext() {
-        if (position >= items.size()) {
-            return false;
-        } else {
-            return true;
-        }
+        return position < items.size();
     }
 }

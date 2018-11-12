@@ -1,6 +1,6 @@
-package Ch9_Iterator.DinerMerged.Iterators;
+package Ch9_Iterator.DinerMerger.Iterators;
 
-import Ch9_Iterator.DinerMerged.MenuItem;
+import Ch9_Iterator.DinerMerger.MenuItem;
 
 public class DinerMenuIterator implements Iterator {
     MenuItem[] items;
@@ -17,10 +17,6 @@ public class DinerMenuIterator implements Iterator {
     }
 
     public boolean hasNext() {
-        if (position >= items.length || items[position] == null) {
-            return false;
-        } else {
-            return true;
-        }
+        return position < items.length && items[position] != null;
     }
 }

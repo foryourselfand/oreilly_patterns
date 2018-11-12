@@ -1,7 +1,7 @@
-package Ch9_Iterator.DinerMerged;
+package Ch9_Iterator.DinerMerger;
 
-import Ch9_Iterator.DinerMerged.Menus.DinerMenu;
-import Ch9_Iterator.DinerMerged.Menus.PancakeHouseMenu;
+import Ch9_Iterator.DinerMerger.Menus.DinerMenu;
+import Ch9_Iterator.DinerMerger.Menus.PancakeHouseMenu;
 
 import java.util.ArrayList;
 
@@ -45,15 +45,14 @@ public class MenuTestDrive {
 
         // Exposing implementation
         System.out.println("USING FOR LOOPS");
-        for (int i = 0; i < breakfastItems.size(); i++) {
-            MenuItem menuItem = (MenuItem)breakfastItems.get(i);
+        for (MenuItem breakfastItem : breakfastItems) {
+            MenuItem menuItem = (MenuItem) breakfastItem;
             System.out.print(menuItem.getName());
             System.out.println("\t\t" + menuItem.getPrice());
             System.out.println("\t" + menuItem.getDescription());
         }
 
-        for (int i = 0; i < lunchItems.length; i++) {
-            MenuItem menuItem = lunchItems[i];
+        for (MenuItem menuItem : lunchItems) {
             System.out.print(menuItem.getName());
             System.out.println("\t\t" + menuItem.getPrice());
             System.out.println("\t" + menuItem.getDescription());

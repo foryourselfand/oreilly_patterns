@@ -1,8 +1,8 @@
-package Ch9_Iterator.DinerMerged.Menus;
+package Ch9_Iterator.DinerMerger.Menus;
 
-import Ch9_Iterator.DinerMerged.Iterators.Iterator;
-import Ch9_Iterator.DinerMerged.MenuItem;
-import Ch9_Iterator.DinerMerged.Iterators.PancakeHouseMenuIterator;
+import Ch9_Iterator.DinerMerger.Iterators.Iterator;
+import Ch9_Iterator.DinerMerger.Iterators.PancakeHouseMenuIterator;
+import Ch9_Iterator.DinerMerger.MenuItem;
 
 import java.util.ArrayList;
 

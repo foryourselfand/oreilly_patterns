@@ -1,4 +1,4 @@
-package Ch9_Iterator.DinerMerged;
+package Ch9_Iterator.DinerMerger;
 
 public class MenuItem {
     String name;
@@ -9,8 +9,7 @@ public class MenuItem {
     public MenuItem(String name,
                     String description,
                     boolean vegetarian,
-                    double price)
-    {
+                    double price) {
         this.name = name;
         this.description = description;
         this.vegetarian = vegetarian;
@@ -32,6 +31,7 @@ public class MenuItem {
     public boolean isVegetarian() {
         return vegetarian;
     }
+
     public String toString() {
         return (name + ", $" + price + "\n   " + description);
     }
