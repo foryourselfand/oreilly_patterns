@@ -1,13 +1,18 @@
 package Ch9_Iterator.DinerMergerIncluded;
 
+import Ch9_Iterator.DinerMergerIncluded.Menus.Menu;
+import Ch9_Iterator.DinerMergerIncluded.Menus.CafeMenu;
 import Ch9_Iterator.DinerMergerIncluded.Menus.DinerMenu;
 import Ch9_Iterator.DinerMergerIncluded.Menus.PancakeHouseMenu;
 
 public class MenuTestDrive {
     public static void main(String args[]) {
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
-        Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
+        Menu pancakeHouseMenu = new PancakeHouseMenu();
+        Menu dinerMenu = new DinerMenu();
+        Menu cafeMenu = new CafeMenu();
+
+        Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu, cafeMenu);
+
         waitress.printMenu();
         waitress.printVegetarianMenu();
 
@@ -25,6 +30,5 @@ public class MenuTestDrive {
         } else {
             System.out.println("No");
         }
-
     }
 }
