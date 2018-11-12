@@ -1,7 +1,7 @@
-package Ch9_Iterator.NotBuilt.Menus;
+package Collections.NotBuilt.Menus;
 
-import Ch9_Iterator.NotBuilt.Iterators.DinerMenuIterator;
-import Ch9_Iterator.NotBuilt.Iterators.Iterator;
+import Collections.NotBuilt.Iterators.DinerMenuIterator;
+import Collections.NotBuilt.Iterators.Iterator;
 
 public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;

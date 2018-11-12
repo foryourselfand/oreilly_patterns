@@ -1,8 +1,8 @@
-package Ch9_Iterator.Built;
+package Collections.Built;
 
 
-import Ch9_Iterator.Built.Menus.DinerMenu;
-import Ch9_Iterator.Built.Menus.PancakeHouseMenu;
+import Collections.Built.Menus.DinerMenu;
+import Collections.Built.Menus.PancakeHouseMenu;
 
 import java.util.Iterator;
 

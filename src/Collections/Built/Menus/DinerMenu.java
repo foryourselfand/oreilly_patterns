@@ -1,6 +1,6 @@
-package Ch9_Iterator.Built.Menus;
+package Collections.Built.Menus;
 
-import Ch9_Iterator.Built.DinerMenuIterator;
+import Collections.Built.DinerMenuIterator;
 
 import java.util.Iterator;
 

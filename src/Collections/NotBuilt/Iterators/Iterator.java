@@ -1,4 +1,4 @@
-package Ch9_Iterator.NotBuilt.Iterators;
+package Collections.NotBuilt.Iterators;
 
 public interface Iterator {
     boolean hasNext();

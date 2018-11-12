@@ -1,7 +1,9 @@
-package Ch9_Iterator.Built.Menus;
+package Collections.NotBuilt.Menus;
+
+import Collections.NotBuilt.Iterators.Iterator;
+import Collections.NotBuilt.Iterators.PancakeHouseMenuIterator;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class PancakeHouseMenu implements Menu {
     ArrayList<String> menuItems;
@@ -23,8 +25,8 @@ public class PancakeHouseMenu implements Menu {
         return menuItems;
     }
 
-    public Iterator<String> createIterator() {
-        return menuItems.iterator();
+    public Iterator createIterator() {
+        return new PancakeHouseMenuIterator(menuItems);
     }
 
     public String toString() {

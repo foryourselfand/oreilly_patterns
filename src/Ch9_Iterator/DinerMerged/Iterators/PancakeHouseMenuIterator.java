@@ -1,19 +1,21 @@
-package Ch9_Iterator.NotBuilt.Iterators;
+package Ch9_Iterator.DinerMerged.Iterators;
+
+import Ch9_Iterator.DinerMerged.MenuItem;
 
 import java.util.ArrayList;
 
 public class PancakeHouseMenuIterator implements Iterator {
-    ArrayList<String> items;
+    ArrayList<MenuItem> items;
     int position = 0;
 
-    public PancakeHouseMenuIterator(ArrayList<String> items) {
+    public PancakeHouseMenuIterator(ArrayList<MenuItem> items) {
         this.items = items;
     }
 
-    public String next() {
-        String menuItem = (String) items.get(position);
+    public MenuItem next() {
+        MenuItem item = items.get(position);
         position = position + 1;
-        return menuItem;
+        return item;
     }
 
     public boolean hasNext() {
