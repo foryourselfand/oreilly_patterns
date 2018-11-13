@@ -1,4 +1,4 @@
-package Ch12_Composite;
+package Ch12_Composite.AllUCanImagin;
 
 public class CountingDuckFactory extends AbstractDuckFactory {
     public Quackable createMallardDuck() {

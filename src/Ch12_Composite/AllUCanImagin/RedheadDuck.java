@@ -1,10 +1,10 @@
-package Ch12_Composite;
+package Ch12_Composite.AllUCanImagin;
 
-public class MallardDuck implements Quackable {
+public class RedheadDuck implements Quackable {
     Observable observable;
 
-    public MallardDuck() {
-        this.observable = new Observable(this);
+    public RedheadDuck() {
+        observable = new Observable(this);
     }
 
     public void quack() {
@@ -12,17 +12,15 @@ public class MallardDuck implements Quackable {
         notifyObservers();
     }
 
-    public String toString() {
-        return "Mallard Duck";
-    }
-
-    @Override
     public void registerObserver(Observer observer) {
         observable.registerObserver(observer);
     }
 
-    @Override
     public void notifyObservers() {
         observable.notifyObservers();
+    }
+
+    public String toString() {
+        return "Redhead Duck";
     }
 }
