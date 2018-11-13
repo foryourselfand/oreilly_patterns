@@ -1,4 +1,4 @@
-package Ch11_Proxy.GumballRemote;
+package Ch11_Proxy.GumballRemote.States;
 
 import java.io.Serializable;
 

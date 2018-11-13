@@ -1,5 +1,7 @@
 package Ch11_Proxy.GumballRemote;
 
+import Ch11_Proxy.GumballRemote.States.*;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
@@ -44,7 +46,7 @@ public class GumballMachine
         state.dispense();
     }
 
-    void releaseBall() {
+    public void releaseBall() {
         System.out.println("A gumball comes rolling out the slot...");
         if (count != 0) {
             count = count - 1;

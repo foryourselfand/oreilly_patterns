@@ -1,5 +1,7 @@
 package Ch11_Proxy.GumballRemote;
 
+import Ch11_Proxy.GumballRemote.States.State;
+
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 

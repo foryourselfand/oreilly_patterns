@@ -1,4 +1,6 @@
-package Ch11_Proxy.GumballRemote;
+package Ch11_Proxy.GumballRemote.States;
+
+import Ch11_Proxy.GumballRemote.GumballMachine;
 
 public class WinnerState implements State {
     private static final long serialVersionUID = 2L;
