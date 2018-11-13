@@ -17,6 +17,14 @@ public class QuackCounter implements Quackable {
         numberOfQuacks++;
     }
 
+    public void registerObserver(Observer observer) {
+        duck.registerObserver(observer);
+    }
+
+    public void notifyObservers() {
+        duck.notifyObservers();
+    }
+
     public String toString() {
         return duck.toString();
     }
