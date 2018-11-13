@@ -1,4 +1,6 @@
-package Ch11_Proxy.Protected;
+package Ch11_Proxy.Protected.Handlers;
+
+import Ch11_Proxy.Protected.PersonBean;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;

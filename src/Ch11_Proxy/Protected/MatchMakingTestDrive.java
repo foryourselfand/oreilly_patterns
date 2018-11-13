@@ -1,5 +1,8 @@
 package Ch11_Proxy.Protected;
 
+import Ch11_Proxy.Protected.Handlers.NonOwnerInvocationHandler;
+import Ch11_Proxy.Protected.Handlers.OwnerInvocationHandler;
+
 import java.lang.reflect.Proxy;
 import java.util.HashMap;
 
