@@ -1,4 +1,7 @@
-package Ch12_Composite.MVC;
+package Ch12_Composite.MVC.View;
+
+import Ch12_Composite.MVC.Controller.ControllerInterface;
+import Ch12_Composite.MVC.Model.BeatModelInterface;
 
 import javax.swing.*;
 import java.awt.*;

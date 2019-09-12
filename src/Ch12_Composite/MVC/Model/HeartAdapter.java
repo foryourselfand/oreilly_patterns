@@ -1,5 +1,10 @@
-package Ch12_Composite.MVC;
+package Ch12_Composite.MVC.Model;
 
+
+import Ch12_Composite.MVC.Model.BeatModelInterface;
+import Ch12_Composite.MVC.Model.HeartModelInterface;
+import Ch12_Composite.MVC.View.BPMObserver;
+import Ch12_Composite.MVC.View.BeatObserver;
 
 public class HeartAdapter implements BeatModelInterface {
     HeartModelInterface heart;

@@ -1,5 +1,8 @@
-package Ch12_Composite.MVC;
+package Ch12_Composite.MVC.Controller;
 
+import Ch12_Composite.MVC.Model.HeartAdapter;
+import Ch12_Composite.MVC.Model.HeartModelInterface;
+import Ch12_Composite.MVC.View.DJView;
 
 public class HeartController implements ControllerInterface {
     HeartModelInterface model;

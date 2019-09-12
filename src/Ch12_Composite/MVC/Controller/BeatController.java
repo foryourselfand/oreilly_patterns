@@ -1,4 +1,7 @@
-package Ch12_Composite.MVC;
+package Ch12_Composite.MVC.Controller;
+
+import Ch12_Composite.MVC.Model.BeatModelInterface;
+import Ch12_Composite.MVC.View.DJView;
 
 public class BeatController implements ControllerInterface {
     BeatModelInterface model;

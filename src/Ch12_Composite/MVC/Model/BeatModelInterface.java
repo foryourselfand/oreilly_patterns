@@ -1,4 +1,7 @@
-package Ch12_Composite.MVC;
+package Ch12_Composite.MVC.Model;
+
+import Ch12_Composite.MVC.View.BPMObserver;
+import Ch12_Composite.MVC.View.BeatObserver;
 
 public interface BeatModelInterface {
     void initialize();

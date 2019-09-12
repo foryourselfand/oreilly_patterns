@@ -1,4 +1,4 @@
-package Ch12_Composite.MVC;
+package Ch12_Composite.MVC.View;
 
 import javax.swing.*;
 
